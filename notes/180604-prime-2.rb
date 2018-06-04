@@ -1,12 +1,11 @@
 a = 100
 b = (2...a)
+c = (2...Math.sqrt(a).floor)
 b.each do |x|
   prime = x
-  b.each do |y|
-    if  y * y < x then
-      if x % y == 0
-        prime = nil
-      end
+  c.each do |y|
+    if x % y == 0
+      prime = nil
     end
   end
   if prime != nil then
