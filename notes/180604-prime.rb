@@ -13,7 +13,7 @@ b.each do |x|
   else  
     c.each do |y|
       if prime != nil
-        if y * y < x then
+        if y < x then
           if x % y == 0
             prime = nil
           end
