@@ -1,8 +1,8 @@
 a = [1, 2, 3, 4, 5, 6]
 a.each do |x|
-  if x.even? && x % 3 == 0
+  if x % 2 == 0 && x % 3 == 0
     puts 'fizz buzz'
-  elsif x.even?
+  elsif x % 2 == 0
     puts 'buzz'
   elsif x % 3 == 0
     puts 'fizz'

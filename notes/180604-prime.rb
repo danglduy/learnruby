@@ -3,7 +3,7 @@ b = (2...a)
 b.each do |x|
   prime = x
   b.each do |y|
-    if x % y == 0 && y < x
+    if x % y == 0 && y < x then
       prime = nil
     end
   end
