@@ -17,4 +17,3 @@ v2.counter = 50000
 
 # Two object same class: Classified by property/attribute
 # Two class: Classified by behavior/method
-

@@ -1,5 +1,5 @@
 class Car
-  attr_accessor :counter, :fuel # Create get and set methods for attrs
+  attr_accessor :counter, :fuel # Create get and set methods for attributes
 
   def drive(l)
     counter = l
@@ -18,9 +18,9 @@ class Vios < Car
   attr_accessor :wheel
   
   def initialize()
-    @wheel = 4 #Instance variable
+    @wheel   = 4 # Instance variable
     @utility = ""
-    @@seat = 5
+    @@seat   = 5 # Class variable
   end
   
   def setUtility(v)
