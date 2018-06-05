@@ -7,26 +7,27 @@ class Car
   end
 
   # define private method
-  private
-    def fuel_change(v)
-      fuel = v
-    end
 
+  private
+
+  def fuel_change(v)
+    fuel = v
+  end
 end
 
 class Vios < Car
   attr_accessor :wheel
-  
-  def initialize()
+
+  def initialize
     @wheel   = 4 # Instance variable
     @utility = ""
     @@seat   = 5 # Class variable
   end
-  
+
   def setUtility(v)
     @utility = v
   end
-  
+
   def getUtility
     @utility
   end
@@ -38,7 +39,6 @@ class Vios < Car
   def self.seat=(s)
     @@seat = s
   end
-
 end
 
 class Vios3_0 < Vios
