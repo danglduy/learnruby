@@ -1,6 +1,6 @@
 a = 100
 b = (2...a)
-c = (3...Math.sqrt(a).floor).delete_if { |n| n % 2 == 0 }
+c = (3...Math.sqrt(a).floor).to_a.delete_if{|x| x % 2 == 0}
 b.each do |x|
   prime = x
   if x % 2 == 0 && x > 2
