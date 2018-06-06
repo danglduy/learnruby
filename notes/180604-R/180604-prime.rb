@@ -16,6 +16,7 @@ b.each do |x|
         if y < x
           if x % y == 0
             prime = nil
+            return
           end
         end
       end
