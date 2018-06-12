@@ -1,0 +1,47 @@
+GET: Query strings
+POST: Form data
+
+Hacking types :?
+1. Sniffer: Capture network packages
+2. Admin: Open database, get password
+3. XSS/CSRF
+4. Physical attack: (Read memory)
+
+SSL Key: Public/Private
+
+TCP: Need response
+UDP: No need response
+WS: WebSocket
+Webservice: connect (api)
+
+Domain: Mapping to IP
+"abc.com" -> "111.222.111.222"
+Browser: "abc.com". DNS resolve "abc.com" to "xxx.xxx.xxx.xxx".
+Register domain via Domain registrars
+
+GET/POST
+GET: Parameters are displayed on browser's address (PASSWORD)
+POST: Paramters are not displayed on browser's address.
+GET: Query strings length is limited (vary on client and server)
+POST: Form data size is not limited.
+GET: Cannot upload file (size limit, text)
+POST: Can upload file (because of size unlimit) (Create and update)
+
+PUT: Update?
+DELETE: Delete
+HEAD: Check header
+TRACE: Trace
+CONNECT: Ping
+OPTIONS: 
+
+Web: accept only GET/POST
+PATCH: Modify
+PUT: Replace
+
+Data: rows& columns
+6 cols/properties id/name/email...
+Reset password:
+PUT: Replace object 
+PATCH: Modify object
+
+
