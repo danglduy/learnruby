@@ -1,0 +1,6 @@
+@user: preserve info
+
+@user from controller -> view -> preserve info
+
+
+User.new: no preserve info

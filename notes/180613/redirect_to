@@ -1,0 +1,2 @@
+user_url
+@user.class = User -> downcase -> routes mapping user_path
