@@ -1,0 +1,3 @@
+1. Remember token = random string stored in browser's cookie
+2. Encrypt the token -> digest, stored in database
+3. Get the token, encrypt and compare to the digest stored in the database. Equal -> true!

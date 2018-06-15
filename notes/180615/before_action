@@ -1,0 +1,2 @@
+before_action [:check_def], only: [:def1, def2] ~ filter
+
