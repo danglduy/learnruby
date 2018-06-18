@@ -1,0 +1,5 @@
+render user -> user.Model = User -> _user.html.erb
+_: partial
+user: User model
+
+render @users -> auto .each
