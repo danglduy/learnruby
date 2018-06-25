@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def new
@@ -25,8 +26,6 @@ class UsersController < ApplicationController
       # redirect_to user_path(id: @user.id)
       # redirect_to ('/users/'+@user.id.to_s)
       # redirect_to user_url(@user)
-
-
 
     else
       render 'new'
@@ -55,19 +54,27 @@ class UsersController < ApplicationController
     flash[:success] = "User deleted"
     redirect_to users_path
   end
+
+  def following
+    @title = "Following"
+    @user  = User.find(params[:id])
+    @users = @user.following.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @user  = User.find(params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+
   private
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                       :password_confirmation)
 
-    end
-
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "Please login!"
-        redirect_to login_url
-      end
     end
 
     def correct_user
