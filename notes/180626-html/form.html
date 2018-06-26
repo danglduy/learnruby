@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+  <div id="content">
+    <form action="http://webcoban.vn/" method="post" enctype="multipart/form-data">
+      Name <input type="text" name="fullname"><br>
+      Email <input type="email" name="email"><br>
+      Password <input type="password" name="password"><br>
+      Sex <input type="radio" name="sex" value="1" checked="checked"> Female
+          <input type="radio" name="sex" value="2"> Male
+      <br>
+      Language
+          <select id="language" name="language">
+            <option value="1">Vietnamese</option>
+            <option value="2">English</option>
+            <option value="3" selected="selected">Japanese</option>            
+          </select>
+      <br>
+      Skills
+          <input type="checkbox" name="skill" value="1"> Java
+          <input type="checkbox" name="skill" value="2"> .Net
+          <input type="checkbox" name="skill" value="3"> PHP
+          <input type="checkbox" name="skill" value="4"> Ruby
+      <br>
+      Admin <input type="checkbox" name="admin" value="true" checked="checked">
+      <br>
+      <input type="submit" value="Submit">
+      <input type="file">
+    </form>  
+  </div>  
+</body>
+</html>
