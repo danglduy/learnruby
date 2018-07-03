@@ -1,0 +1,8 @@
+5. 1-1, 1-n, n-n
+- 1-n: 
++ pk of a table is fk of another table
+- 1-1:
++ Example profile: 1 user has 1 profile:?
+- n-n:
++ Exp.: Products <-> users
++ separated table: product.id, user.id ~ intermediate entity

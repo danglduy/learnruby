@@ -1,0 +1,25 @@
+# History:
+- .txt: data is stored in txt,
+- .csv: is splitted between delimited (exp comma)
+- excel: 
++ sheets
++ rows/columns-> cells
++ use excel functions to operate on data
++ being used by one, locked to others
+- access
++ same as excel
++ use sql 
++ 1 db can be used by multiple people
++ limited by database size
+- modern rdbms: oracle, mysql, postgresql, oracle, sql server, db2.
++ language: sql
++ support transactions
++ lock
+- db on memory: mongodb, sqlite
+- cache: redis/memcached
+- Graphdb: neo4j
++ no table term
+- blockchain
++ safe
++ distributed/decentralized
+

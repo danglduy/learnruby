@@ -1,0 +1,7 @@
+3. Tables/Row/Column/Datatypes
+- 1 Table: excel row/column, cell datatypes/constraints
+- datatypes: number(integer,float), string, boolean, datetime
+- column names: id...
+- column datatypes: int...
+- rows: data
+- common constraints: not null, unique, auto increment

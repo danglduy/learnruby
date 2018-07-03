@@ -1,0 +1,16 @@
+4. keys/pk/fk - 1nf, 2nf, 3nf
+- primary key: 
++ identify between rows: unique
++ key can be 1 column/2 columns
++ modern pk: id - unique, auto increment.
+- foreign keys:
+- index: 
+- 1nf: 
++ identified by pk
++ 1 column has "single" value
+- 2nf:
++ if data of a column is repeated, should be separated to a new table.
++ foreign key: a column that is related to "pk" of the new table.
+- 3nf:
++ delete a column which is not dependent from pk
+
