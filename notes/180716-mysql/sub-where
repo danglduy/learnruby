@@ -1,0 +1,20 @@
+
+-
+select DISTINCT a.*
+from artist a
+inner join album b ON a.id = b.artist_id
+-
+select *
+from artist a
+WHERE a.id IN (
+SELECT b.artist_id from album b
+    )
+-
+select *
+from artist a
+where exist (
+select b.id
+from album b
+where a.id=b.artist_id
+    )
+speed: sql engine / size of table

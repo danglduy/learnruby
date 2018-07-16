@@ -1,0 +1,2 @@
+select a.*,(select b.name from artist b
+where b.id = a.artist_id) from album a

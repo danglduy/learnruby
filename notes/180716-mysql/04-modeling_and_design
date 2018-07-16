@@ -1,0 +1,12 @@
+1. Excel: all datas in one file
+2. Standards: Follow 1nf, 2nf, 3nf
+3. [Noun] / <Verb>
+4. Entity Relationship
+5. Partial or participant? => 1
+6. Attrib / Entity => 2
+7. Entity / Relationship => 3
+- Two ids / attributes of relations (Thuoc tinh moi quan he)
+8. Intermediate entities (Bang trung gian) => 4
+- Two ids only
+- Delete/Insert only, no update
+9. Weak/strong entities

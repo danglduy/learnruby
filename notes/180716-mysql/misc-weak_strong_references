@@ -1,0 +1,2 @@
+1. weak reference: not protected by garbage collector
+2. strong reference: be protected -> memory leak

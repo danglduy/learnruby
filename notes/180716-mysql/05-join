@@ -1,0 +1,4 @@
+1. inner join: match two tables based on 1 table's fk and other's pk
+2. left join / right join
+3. full join
+
