@@ -1,0 +1,100 @@
+<html>
+  <head>
+		<script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			  crossorigin="anonymous">
+		</script>
+  </head>
+  <body>
+    <div id="div1">
+    </div>
+
+    <input id="btn" type="button" value="Click me!">
+    <script>
+      function hello() {
+        $('#div1').html("Hello World");
+      }
+      $('#btn').click(hello);
+    </script>
+
+    <div id="div2">
+      <form action="http://vnexpress.net" method="post">
+        Name <input type="text" name="name">
+        <br>
+        Email <input type="email" name="email">
+        <br>
+        Language <select name="language">
+          <option value="1">English</option>
+          <option value="2">Vietnamese</option>
+          <option value="3">Japanese</option>
+        </select>
+        <br>
+        Gender
+          <input type="radio" name="gender" value="1"> Male
+          <input type="radio" name="gender" value="2"> Female
+        <br>
+        Skills
+          <input type="checkbox" name="skill" value="1"> Java
+          <input type="checkbox" name="skill" value="2"> PHP
+          <input type="checkbox" name="skill" value="3"> dotNet
+        <br>
+          <input type="button" value="Register" id="register" onclick="register()">
+      </form>
+    </div>
+
+    <script>
+function register() {
+  var data = {}
+
+  data.name = $('#div2 form input[name="name"]').val();
+  data.email = $('#div2 form input[name="email"]').val();
+  data.language = $('#div2 form select[name="language"]').val();
+  console.log(data);
+}
+    </script>
+		<div id="div3">
+      <ul>
+        <li>Hanoi</li>
+        <li>HCM</li>
+        <li>Da Nang</li>
+        <li>Hai Phong</li>
+        <li>Can Tho</li>
+      </ul>
+
+      <input type="button" value="X" id="toggle">
+      <input type="button" value="-" id="remove">
+      <input type="button" value="+" id="add">
+    </div>
+<script>
+function toggle() {
+  if($('#div3 ul').is(':visible')){
+    $('#div3 ul').hide();
+  } else {
+    $('#div3 ul').show();
+  }
+}
+function remove() {
+  $('#div3 ul li:last-child').remove();
+}
+function add() {
+  $('#div3 ul').append('<li>AAA</li>');
+}
+
+$(document).ready(function() {
+  $('#div3 #toggle').click(function() {
+    toggle();
+  });
+  $('#div3 #remove').click(function() {
+    remove();
+  });
+  $('#div3 #add').click(function() {
+    add();
+  });
+})
+</script>
+
+
+
+  </body>
+</html>
