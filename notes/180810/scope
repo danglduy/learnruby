@@ -1,0 +1,2 @@
+Search user has email ~ :user.where(email: "...")
+scope :top, ->(){order()top(10)}

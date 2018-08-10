@@ -1,0 +1,4 @@
+view: conditional check
+controller: render, dispatch
+model: business logic, validate
+
