@@ -1,0 +1,177 @@
+1. Algortihm: Bubble, selection, insertion, heap, quick, merge /// bucket, radix
+how complexity?
+why complexity? log n (sau mỗi vòng lặp thì số phần từ giảm đi)
+Đệ qui: stackoverflow first in last out
+Khử đệ qui: dùng vòng lặp
+stack / heap: 
+stack: tự động
+heap: chứa các biến tham chiếu
+
+Tree: depth/width
+
+2. OOP:
+Abstraction
+ruby: class is object (Class.new)
+prototype based -> Class.new -> clone existing (hầu hết các ngôn ngữ scripting là prototype based)
+java: class not object (new Class)
+class based -> build object from map
+
+Inhertance
+Ruby: < 
+Đâ kế thừa: dùng module/mixins (fake multi inheritance)
+encapsulation:
+access modifier (private/protected/public) / get set methods. Tất cả biến đều là private.
+attr_accessor -> biến @, sinh ra 2 hàm get set
+polymorphism
+- overwrite: (không phải overload)
+viết hàm cùng tên, khác nội dung.
+overload: cùng tên hàm, khác đối số.
+- con trỏ lớp cha trỏ vào biến lớp con. (ko phải trong ruby)
+
+loại biến: local, instance, class variable 
+
+khi nào instance variable được khởi tạo (khi khởi tạo 1 instance - Class.new)
+class variable: khởi tạo khi class loader
+
+3. Database
+- 1nf: 
++ mỗi trường 1 loại dữ liệu trường đơn trị 
++ primary
+- 2nf:
++ foreign key: nếu dữ liệu bị trùng lặp thì tạo bảng mới, dùng foreign key
+
+quan hệ: 1-1 1-n, n-n
+bảng trung gian / bảng quan hệ (chứa các trường khác) 
+nested attr: 1-n
+singular id: n-n
+
+- 3nf:
+cộng: 3 thanh ghi
+trừ : 4
+nhận: chậm hơn nhiều
+
+join: inner, left, right, full, native
+full: inner, left , right hợp (dùng union)
+native join: 
+
+subquery: 
+where On+1
+select
+from/join
+
+On+1: subquery
+cùng On^2: temporary table (inner join)
+số lượng lớn: subquery
+mysql /pg: subquery
+sql serveR: join
+
+Chiều join: join bắt đầu từ đâu...
+
+N+1: 
+- lazy: khi dùng mới load
+- eager: select / join(include) (ko cần chặn N+1 nếu phân trang) / batch size (preload)
+- 
+
+1 câu SQL 2 tg: query & return
+connect -> lấy -> trả về -> đóng
+
+transaction: thao tác nhiều bản ghi -> hoàn thành thì commit, không thì rollback
+lock: 
+lock modes
+lock none
+lock read: cấm SELECT, không mở được
+lock write: đảm bảo logic
+
+index: đánh chỉ mục. hỗ trợ nhanh tìm kiếm. Ví dụ pk/fk/search column/các trường được order by.
+
+Thuật toán đánh index: Thư tự từ điển: B-tree (word) / chữ đầu tiên
+
+full text search: 
+
+xml: 2 cách 
+DOM: Tạo node tree từ gốc đến hết
+SAX: Đọc đến đâu load đến đó
+ 
+index: read nhanh nhưng insert chậm
+
+full text search
+- Elasticsearch: Đánh index theo từng câu -> đánh index từng từ. Dùng 1 document để xác định gồm những từ nào.
+- Solr:
+- Lucence:
+
+view: bảng readonly, hiển thị kết quả của câu select. có cache sẵn result, không cần query nữa.
+
+
+4. Web
+http request: header / params: query string/form data.
+timeout 30s
+http method: 8 methods
+http response: html, js, css, json, img, xml, ...
+https: chống sniffing, có lớp ssl
+1st: handshake - lấy public key
+2nd: dùng public key mã hóa dữ liệu.
+3rd: dùng private key trên server để giải mã.
+session: dùng session id. được khởi tạo request đầu tiên, lưu vào cookie.
+hủy: timeout/tắt browser/xóa cookie
+cookie:
+nằm trên client
+
+ajax: cross domain
+
+CDN
+s3
+cloud service
+load balancing: round robin, failover, %
+precompile: asset pipeline/sprocket: 
+- manifest pile
+- assets (js, css, image)
+- preprocessor engine: 
++ combine js, css.
++ minify js, css.
++ chèn mã sau tên file. sẽ thay đổi khi file thay đổi.
+
+
+
+
+i18n: language, datetime, number
+concerns is module extend activerecord
+
+custom_validation
+enumerable
+def ? dựa trên giá trị
+def ! đưa về giá trị
+def tên của enum, trả về giá trị
+
+dynamic form
+nested attr
+gửi mail
+ADVANCE 1
+cancancan + namespace
+ransack: 
+- form:
+- filter:
+
+inline
+inspect element
+sửa trên browser
+id 
+overwrite: dùng selector, load sau
+important
+javascript: on load sửa
+css attr
+
+----------
+
+1. What
+2. How
+3. 5 x Why. Key -> Tech lead -> Manager -> Open source -> CTO
+
+Design pattern
+isEmpty
+meta programming (everything to send)
+
+
+--------
+
+1. Knowledge
+2. Experience
