@@ -1,6 +1,5 @@
 def insertion_sort(array)
   size = array.length
-  i = 0
   for i in 0...size do
     current = array[i]
     j = i
